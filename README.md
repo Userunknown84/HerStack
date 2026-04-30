@@ -24,7 +24,7 @@ HerStack is three things working together:
 
 ## Live Site
 
-🌐 [herstack.org](https://herstack.org.in)
+🌐 [herstack.org](https://herstack.org)
 
 ---
 
