@@ -6,7 +6,8 @@ HerStack is an open source community platform helping school girls and young wom
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GirlScript](https://img.shields.io/badge/GirlScript-Summer%20of%20Code-orange)](https://gssoc.girlscript.tech/)
+
+[//]: # ([![GirlScript]&#40;https://img.shields.io/badge/GirlScript-Summer%20of%20Code-orange&#41;]&#40;https://gssoc.girlscript.tech/&#41;)
 
 ---
 
