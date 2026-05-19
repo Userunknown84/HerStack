@@ -264,11 +264,11 @@ export default function OurMission() {
         </p>
 
         <div className="flex justify-center gap-4 flex-wrap">
-          <a href="#learn" className="btn-primary">
+          <a href="/#learn" className="btn-primary">
             Start Learning →
           </a>
 
-          <a href="#contribute" className="btn-secondary">
+          <a href="https://github.com/HerStack-org" className="btn-secondary">
             Contribute to HerStack
           </a>
         </div>
