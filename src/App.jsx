@@ -1,6 +1,8 @@
 import './styles/globals.css'
-import { Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
 import Pillars from './components/Pillars'
@@ -9,14 +11,27 @@ import Storyboards from './components/Storyboards'
 import Mentors from './components/Mentors'
 import SummerOfAI from './components/SummerOfAI'
 import Contribute from './components/Contribute'
+import Concepts from './pages/Concepts'
 import Footer from './components/Footer'
 import BackToTopButton from './components/Backtotop'
 import OurMission from './components/OurMission'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
 
 export default function App() {
   return (
     <>
       <Nav />
+      <ScrollToTop />
       <main>
           <Routes>
               <Route path="/" element={
@@ -32,6 +47,7 @@ export default function App() {
                   </>
               } />
               <Route path="/our-mission" element={<OurMission />} />
+              <Route path="/concepts" element={<Concepts />} />
           </Routes>
       </main>
       <Footer />
