@@ -1,5 +1,4 @@
-import { use, useState } from "react";
-
+import { useState } from "react";
 
 const features = [
   {
@@ -36,7 +35,7 @@ export default function SummerOfAI() {
     <section
       id="summer"
       className="py-24 px-16 relative overflow-hidden"
-      style={{ background: "var(--purple)" }}
+      style={{ background: 'var(--purple)' }}
     >
       {/* Big background year text */}
       <div
@@ -54,7 +53,7 @@ export default function SummerOfAI() {
         2026
       </div>
 
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
         {/* Left */}
         <div>
           <div
@@ -75,13 +74,8 @@ export default function SummerOfAI() {
             <br />
             Summer of AI
           </h2>
-          <p
-            className="text-lg leading-relaxed font-light mb-8"
-            style={{ color: "rgba(255,255,255,0.75)", maxWidth: 480 }}
-          >
-            An open source program where girls contribute to real AI projects,
-            get mentored by women in the industry, and earn a certificate that
-            actually means something.
+          <p className="text-lg leading-relaxed font-light mb-8" style={{ color: 'rgba(255,255,255,0.75)', maxWidth: 480 }}>
+            An open source program where girls contribute to real AI projects, get mentored by women in the industry, and earn a certificate that actually means something.
           </p>
           <button
             onClick={() => SetBtn(true)}
@@ -132,23 +126,13 @@ export default function SummerOfAI() {
             >
               <span className="text-2xl flex-shrink-0">{icon}</span>
               <div>
-                <h4
-                  className="font-display font-bold text-sm mb-1"
-                  style={{ color: "white" }}
-                >
-                  {title}
-                </h4>
-                <p
-                  className="text-xs leading-relaxed font-light"
-                  style={{ color: "rgba(255,255,255,0.65)" }}
-                >
-                  {description}
-                </p>
+                <h4 className="font-display font-bold text-sm mb-1" style={{ color: 'white' }}>{title}</h4>
+                <p className="text-xs leading-relaxed font-light" style={{ color: 'rgba(255,255,255,0.65)' }}>{description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }
